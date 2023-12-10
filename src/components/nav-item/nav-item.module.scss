@@ -1,0 +1,24 @@
+.navItem {
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: var(--accents-2);
+    transition: color var(--transition);
+    pointer-events: auto;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+
+    &_active {
+      color: var(--accents-1);
+      background-color: var(--hsla);
+    }
+
+    &:hover {
+      color: var(--accents-1);
+    }
+  }
+}

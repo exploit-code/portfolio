@@ -1,0 +1,94 @@
+@use "../../styles/mixins";
+
+.experience {
+  display: grid;
+  gap: 32px;
+}
+
+.tabs {
+  display: grid;
+  gap: 16px;
+
+  &__head {
+    display: flex;
+    color: var(--accents-2);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__body {
+    color: var(--accents-2);
+  }
+
+  &__list {
+    display: flex;
+    border: 1px solid var(--transparent);
+  }
+
+  &__title {
+    user-select: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: var(--hsla);
+    white-space: nowrap;
+    transition: color var(--transition);
+
+    &:first-child {
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+    }
+
+    &:last-child {
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+    }
+
+    &:hover {
+      color: var(--accents-1);
+    }
+  }
+
+  &__panel {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__panelTitle {
+    @include mixins.font(16px, 400, 150%);
+    @include mixins.flex(flex-start, center);
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: max-content;
+
+    &_link {
+      color: var(--accents-2);
+      @include mixins.font(14px, 400, 100%);
+      background-color: var(--hsla);
+      padding: 4px 8px;
+      border-radius: 20px;
+      transition: color var(--transition);
+
+      &:hover {
+        color: var(--accents-1);
+      }
+    }
+  }
+
+  &__panelList {
+    display: grid;
+    gap: 8px;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  &__panelListItem {
+    @include mixins.font(16px, 400, 130%);
+  }
+
+  [aria-selected="true"] {
+    color: var(--accents-1);
+  }
+}

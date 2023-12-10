@@ -1,0 +1,58 @@
+@use "../../styles/mixins";
+
+.hamburger {
+  @include mixins.flex(center, flex-start);
+  flex-direction: column;
+  gap: 8px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-color: var(--transparent);
+  cursor: pointer;
+  position: relative;
+  z-index: 15;
+
+  &__line {
+    height: 1px;
+    width: 100%;
+    transition: all var(--transition);
+    background-color: var(--accents-1);
+
+    &_top {
+      width: 100%;
+    }
+
+    &_bottom {
+      width: 50%;
+    }
+  }
+
+  &:hover > .hamburger__line {
+    width: 100%;
+  }
+
+  &_active {
+    width: 32px;
+    height: 32px;
+    position: relative;
+
+    & > .hamburger__line {
+      position: absolute;
+
+      &_top {
+        rotate: 0 0 1 45deg;
+        z-index: 15;
+      }
+
+      &_bottom {
+        rotate: 0 0 1 -45deg;
+        z-index: 15;
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

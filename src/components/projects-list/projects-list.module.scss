@@ -1,0 +1,25 @@
+@use "../../styles/mixins";
+
+.projects {
+  display: grid;
+  gap: 32px;
+
+  &__list {
+    gap: 16px;
+    align-items: stretch;
+    display: grid;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.layout {
+  width: calc(100% - 32px);
+  max-width: 1152px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  &__main {
+    flex: 1 0 auto;
+    display: grid;
+    gap: 64px;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 64px);
+  }
+}

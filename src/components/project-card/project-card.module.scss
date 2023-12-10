@@ -1,0 +1,33 @@
+@use "../../styles/mixins";
+
+.project {
+  flex-direction: column;
+  background-color: var(--hsla);
+  width: 100%;
+  @include mixins.flex(space-between, flex-start);
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--border-radius);
+
+  &__title {
+    @include mixins.font(16px, 400, 130%);
+    color: var(--accents-2);
+    hyphens: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__listItem {
+    @include mixins.flex(center, center);
+
+    & > svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--accents-2);
+    }
+  }
+}

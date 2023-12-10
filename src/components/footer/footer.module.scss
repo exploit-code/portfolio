@@ -1,0 +1,31 @@
+@use "../../styles/mixins";
+
+.footer {
+  @include mixins.flex(space-between, center);
+  flex: 0 0 auto;
+  padding: 24px 0;
+  border-top: 1px solid var(--accents-2);
+
+  &__copyright {
+    @include mixins.font(16px, 400, 100%);
+    color: var(--accents-2);
+  }
+
+  &__link {
+    display: flex;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__icon {
+    transition: fill var(--transition);
+    fill: var(--accents-2);
+
+    &:hover {
+      fill: var(--accents-1);
+    }
+  }
+}

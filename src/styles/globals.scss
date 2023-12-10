@@ -1,0 +1,48 @@
+:root {
+  --hsla: hsla(0, 0%, 100%, 0.08);
+  --main-color: #101010;
+  --modal-bg: rgba(0, 0, 0, 0.2);
+  --accents-1: #ffffff;
+  --accents-2: #999999;
+  --transition: 0.2s linear;
+  --transparent: transparent;
+  --blur: blur(16px);
+  --outline-color: #fff500;
+  --border-radius: 4px;
+}
+
+[data-theme="light"] {
+  --hsla: hsla(0, 0%, 0%, 0.06);
+  --main-color: #ffffff;
+  --modal-bg: rgba(255, 255, 255, 0.2);
+  --accents-1: #101010;
+  --accents-2: #555555;
+  --outline-color: #eb367f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all linear 0.2s;
+
+  &:focus-visible {
+    outline: 1px solid;
+    outline-color: var(--outline-color);
+  }
+}
+
+html {
+  background-color: var(--main-color);
+  text-rendering: optimizeLegibility;
+}
+
+.locked {
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    overflow: auto;
+  }
+}

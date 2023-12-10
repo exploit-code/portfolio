@@ -1,0 +1,15 @@
+@use "../../styles/mixins";
+
+.skill {
+  @include mixins.flex(center, center);
+  background-color: var(--hsla);
+  width: max-content;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+
+  &__text {
+    color: var(--accents-2);
+    @include mixins.font(16px, 400, 100%);
+    letter-spacing: 0.4px;
+  }
+}

@@ -1,0 +1,55 @@
+@use "../../styles/mixins";
+
+.about {
+  display: grid;
+  gap: 16px;
+
+  &__title {
+    @include mixins.font(24px, 700, 130%);
+    color: var(--accents-1);
+    max-width: max-content;
+  }
+
+  &__subtitle {
+    @include mixins.font(20px, 700, 130%);
+    max-width: max-content;
+    color: var(--accents-1);
+  }
+
+  &__description {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__text {
+    @include mixins.font(16px, 400, 130%);
+    color: var(--accents-2);
+    max-width: 560px;
+  }
+
+  &__btn {
+    @include mixins.flex(flex-start, center);
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (orientation: portrait) {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (orientation: landscape) {
+    &__title {
+      font-size: 48px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+}

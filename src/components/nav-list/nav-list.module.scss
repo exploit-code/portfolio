@@ -1,0 +1,16 @@
+@use "../../styles/mixins";
+
+.nav {
+  display: none;
+
+  &__list {
+    gap: 8px;
+    color: var(--accents-2);
+    @include mixins.flex(flex-start, center);
+    @include mixins.font(16px, 400, 100%);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include mixins.flex(flex-start, center);
+  }
+}

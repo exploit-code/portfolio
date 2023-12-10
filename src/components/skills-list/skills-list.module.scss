@@ -1,0 +1,30 @@
+@use "../../styles/mixins";
+
+.skills {
+  display: grid;
+  gap: 32px;
+
+  &__content {
+    display: grid;
+    align-items: baseline;
+    gap: 32px;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__description {
+    @include mixins.font(16px, 400, 130%);
+    max-width: 560px;
+    color: var(--accents-2);
+  }
+
+  @media screen and (min-width: 768px) {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
