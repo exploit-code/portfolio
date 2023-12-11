@@ -20,7 +20,7 @@ export const SkillsList = () => {
 
         <ul className={styles.skills__box}>
           {technologys.map((technology) => (
-            <SkillItem technology={technology} key={technology.uuid} />
+            <SkillItem technology={technology} icon={technology.icon} key={technology.uuid} />
           ))}
         </ul>
       </div>

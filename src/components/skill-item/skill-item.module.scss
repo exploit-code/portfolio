@@ -2,14 +2,19 @@
 
 .skill {
   @include mixins.flex(center, center);
+  gap: 8px;
   background-color: var(--hsla);
   width: max-content;
-  padding: 8px 16px;
+  padding: 6px 16px;
   border-radius: var(--border-radius);
 
   &__text {
     color: var(--accents-2);
     @include mixins.font(16px, 400, 100%);
     letter-spacing: 0.4px;
+  }
+
+  & svg {
+    color: var(--accents-2);
   }
 }
