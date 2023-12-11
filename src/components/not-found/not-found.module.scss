@@ -2,8 +2,8 @@
 
 .notFound {
   flex-direction: column;
-  gap: 16px;
-  height: calc(100vh - 162px - 128px);
+  gap: var(--value-16-px);
+  height: var(--value-100-percent);
   @include mixins.flex(center, flex-end);
 
   &__code {
@@ -13,8 +13,8 @@
 
   &__line {
     background-color: var(--accents-1);
-    height: 2px;
-    width: 62px;
+    height: var(--border-height);
+    width: var(--value-64-px);
   }
 
   &__message {
@@ -28,8 +28,8 @@
 
     &__line {
       background-color: var(--accents-1);
-      height: 62px;
-      width: 2px;
+      height: var(--value-64-px);
+      width: var(--border-height);
     }
   }
 }

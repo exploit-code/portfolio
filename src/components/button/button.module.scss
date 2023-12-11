@@ -3,10 +3,10 @@
 .button {
   @include mixins.flex(center, center);
   @include mixins.font(16px, 400, 100%);
-  padding: 8px 16px;
-  border: 1px solid var(--transparent);
+  padding: 0 var(--value-16-px);
+  border: var(--border-height) solid var(--transparent);
   background: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--value-4-px);
   cursor: pointer;
   user-select: none;
   width: 100%;
@@ -15,6 +15,7 @@
     border-color,
     background-color,
     linear 0.2s;
+  min-height: var(--value-32-px);
 
   &_default {
     background-color: var(--accents-1);

@@ -2,23 +2,23 @@
 
 .skills {
   display: grid;
-  gap: 32px;
+  gap: var(--value-32-px);
 
   &__content {
     display: grid;
     align-items: baseline;
-    gap: 32px;
+    gap: var(--value-32-px);
   }
 
   &__box {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: var(--value-16-px);
   }
 
   &__description {
     @include mixins.font(16px, 400, 130%);
-    max-width: 560px;
+    max-width: 568px;
     color: var(--accents-2);
   }
 

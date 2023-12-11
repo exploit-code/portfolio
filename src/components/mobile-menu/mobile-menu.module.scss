@@ -2,7 +2,7 @@
 
 .mobileMenu {
   @include mixins.flex(center, center);
-  width: 100%;
+  width: var(--value-100-percent);
   height: 100vh;
   position: fixed;
   top: 0;
@@ -12,26 +12,26 @@
   overflow: hidden;
   transform: scale(0);
   opacity: 0;
-  padding: 16px;
+  padding: var(--value-16-px);
   background: var(--modal-bg);
   backdrop-filter: var(--blur);
 
   &__nav {
-    width: 100%;
+    width: var(--value-100-percent);
     display: grid;
-    gap: 32px;
+    gap: var(--value-32-px);
   }
 
   &__list {
     @include mixins.font(16px, 400, 100%);
     display: grid;
-    gap: 8px;
+    gap: var(--value-8-px);
     color: var(--accents-1);
   }
 
   &__buttons {
     display: grid;
-    gap: 16px;
+    gap: var(--value-16-px);
   }
 
   &_active {

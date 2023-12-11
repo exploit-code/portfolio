@@ -2,12 +2,12 @@
 
 .experience {
   display: grid;
-  gap: 32px;
+  gap: var(--value-32-px);
 }
 
 .tabs {
   display: grid;
-  gap: 16px;
+  gap: var(--value-16-px);
 
   &__head {
     display: flex;
@@ -25,25 +25,27 @@
 
   &__list {
     display: flex;
-    border: 1px solid var(--transparent);
+    border: var(--border-height) solid var(--transparent);
   }
 
   &__title {
+    @include mixins.flex(center, center);
     user-select: none;
     cursor: pointer;
-    padding: 8px 16px;
+    padding: 0 var(--value-16-px);
     background-color: var(--hsla);
     white-space: nowrap;
     transition: color var(--transition);
+    min-height: var(--value-32-px);
 
     &:first-child {
-      border-top-left-radius: var(--border-radius);
-      border-bottom-left-radius: var(--border-radius);
+      border-top-left-radius: var(--value-4-px);
+      border-bottom-left-radius: var(--value-4-px);
     }
 
     &:last-child {
-      border-top-right-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
+      border-top-right-radius: var(--value-4-px);
+      border-bottom-right-radius: var(--value-4-px);
     }
 
     &:hover {
@@ -53,21 +55,21 @@
 
   &__panel {
     display: grid;
-    gap: 16px;
+    gap: var(--value-16-px);
   }
 
   &__panelTitle {
     @include mixins.font(16px, 400, 150%);
     @include mixins.flex(flex-start, center);
     flex-wrap: wrap;
-    gap: 8px;
+    gap: var(--value-8-px);
     max-width: max-content;
 
     &_link {
       color: var(--accents-2);
       @include mixins.font(14px, 400, 100%);
       background-color: var(--hsla);
-      padding: 4px 8px;
+      padding: var(--value-4-px) var(--value-8-px);
       border-radius: 20px;
       transition: color var(--transition);
 
@@ -79,7 +81,7 @@
 
   &__panelList {
     display: grid;
-    gap: 8px;
+    gap: var(--value-8-px);
     list-style-type: disc;
     list-style-position: inside;
   }

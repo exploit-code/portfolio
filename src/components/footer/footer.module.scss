@@ -3,7 +3,7 @@
 .footer {
   @include mixins.flex(space-between, center);
   flex: 0 0 auto;
-  padding: 24px 0;
+  padding: var(--value-24-px) 0;
   border-top: 1px solid var(--accents-2);
 
   &__copyright {
@@ -17,7 +17,7 @@
 
   &__icons {
     display: flex;
-    gap: 16px;
+    gap: var(--value-16-px);
   }
 
   &__icon {

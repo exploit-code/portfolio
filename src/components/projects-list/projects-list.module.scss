@@ -2,10 +2,10 @@
 
 .projects {
   display: grid;
-  gap: 32px;
+  gap: var(--value-32-px);
 
   &__list {
-    gap: 16px;
+    gap: var(--value-16-px);
     align-items: stretch;
     display: grid;
   }
@@ -13,7 +13,7 @@
   @media screen and (min-width: 768px) {
     &__list {
       grid-template-columns: repeat(2, 1fr);
-      gap: 32px;
+      gap: var(--value-32-px);
     }
   }
 

@@ -3,17 +3,17 @@
 .hamburger {
   @include mixins.flex(center, flex-start);
   flex-direction: column;
-  gap: 8px;
+  gap: var(--value-8-px);
   border: none;
-  width: 32px;
-  height: 32px;
+  width: var(--value-32-px);
+  height: var(--value-32-px);
   background-color: var(--transparent);
   cursor: pointer;
   position: relative;
   z-index: 15;
 
   &__line {
-    height: 1px;
+    height: var(--border-height);
     width: 100%;
     transition: all var(--transition);
     background-color: var(--accents-1);
@@ -32,8 +32,8 @@
   }
 
   &_active {
-    width: 32px;
-    height: 32px;
+    width: var(--value-32-px);
+    height: var(--value-32-px);
     position: relative;
 
     & > .hamburger__line {

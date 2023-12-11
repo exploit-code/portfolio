@@ -2,11 +2,12 @@
 
 .skill {
   @include mixins.flex(center, center);
-  gap: 8px;
+  gap: var(--value-8-px);
   background-color: var(--hsla);
   width: max-content;
-  padding: 4px 16px;
-  border-radius: var(--border-radius);
+  padding: 0 var(--value-16-px);
+  border-radius: var(--value-4-px);
+  min-height: var(--value-32-px);  
 
   &__text {
     color: var(--accents-2);

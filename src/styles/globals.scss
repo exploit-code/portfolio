@@ -8,7 +8,15 @@
   --transparent: transparent;
   --blur: blur(16px);
   --outline-color: #fff500;
-  --border-radius: 4px;
+  --border-height: 1px;
+  --value-4-px: 4px;
+  --value-8-px: 8px;
+  --value-16-px: 16px;
+  --value-24-px: 24px;
+  --value-32-px: 32px;
+  --value-64-px: 64px;
+  --value-100-percent: 100%;
+  --max-width-layout: 1168px;
 }
 
 [data-theme="light"] {
@@ -26,10 +34,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  transition: all linear 0.2s;
+  transition: all var(--transition);
 
   &:focus-visible {
-    outline: 1px solid;
+    outline: var(--border-height) solid;
     outline-color: var(--outline-color);
   }
 }

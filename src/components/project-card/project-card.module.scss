@@ -3,11 +3,11 @@
 .project {
   flex-direction: column;
   background-color: var(--hsla);
-  width: 100%;
+  width: var(--value-100-percent);
   @include mixins.flex(space-between, flex-start);
-  gap: 16px;
-  padding: 16px;
-  border-radius: var(--border-radius);
+  gap: var(--value-16-px);
+  padding: var(--value-16-px);
+  border-radius: var(--value-4-px);
 
   &__title {
     @include mixins.font(16px, 400, 130%);
@@ -18,15 +18,15 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: var(--value-8-px);
   }
 
   &__listItem {
     @include mixins.flex(center, center);
 
     & > svg {
-      width: 24px;
-      height: 24px;
+      width: var(--value-24-px);
+      height: var(--value-24-px);
       fill: var(--accents-2);
     }
   }

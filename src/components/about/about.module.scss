@@ -2,7 +2,7 @@
 
 .about {
   display: grid;
-  gap: 16px;
+  gap: var(--value-16-px);
 
   &__title {
     @include mixins.font(24px, 700, 130%);
@@ -18,19 +18,19 @@
 
   &__description {
     display: grid;
-    gap: 8px;
+    gap: var(--value-8-px);
   }
 
   &__text {
     @include mixins.font(16px, 400, 130%);
     color: var(--accents-2);
-    max-width: 560px;
+    max-width: 568px;
   }
 
   &__btn {
     @include mixins.flex(flex-start, center);
     flex-wrap: wrap;
-    gap: 16px;
+    gap: var(--value-16-px);
   }
 
   @media screen and (min-width: 768px) and (orientation: portrait) {

@@ -4,8 +4,8 @@
   @include mixins.flex(center, center);
   background-color: var(--transparent);
   border: none;
-  width: 32px;
-  height: 32px;
+  width: var(--value-32-px);
+  height: var(--value-32-px);
   cursor: pointer;
 
   &__icon {
