@@ -12,6 +12,12 @@
 
   &__box {
     display: flex;
+    flex-direction: column;
+    gap: var(--value-16-px);
+  }
+
+  &__list {
+    display: flex;
     flex-wrap: wrap;
     gap: var(--value-16-px);
   }

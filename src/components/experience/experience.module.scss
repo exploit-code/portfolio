@@ -65,19 +65,6 @@
     flex-wrap: wrap;
     gap: var(--value-8-px);
     max-width: max-content;
-
-    &_link {
-      color: var(--accents-2);
-      @include mixins.font(14px, 400, 100%);
-      background-color: var(--hsla);
-      padding: var(--value-4-px) var(--value-8-px);
-      border-radius: 20px;
-      transition: color var(--transition);
-
-      &:hover {
-        color: var(--accents-1);
-      }
-    }
   }
 
   &__panelList {

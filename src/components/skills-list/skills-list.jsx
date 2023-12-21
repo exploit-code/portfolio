@@ -2,6 +2,7 @@ import styles from "./skills-list.module.scss";
 import { SkillItem } from "../skill-item/skill-item";
 import { SectionTitle } from "../section-title/section-title";
 import { technologys } from "../../utils/technologys-data";
+import { Courses } from "../courses/courses";
 
 export const SkillsList = () => {
   return (
@@ -13,16 +14,19 @@ export const SkillsList = () => {
             В работе Frontend разработчика необходимо обладать рядом ключевых навыков, которые
             помогут создавать качественные и эффективные веб-сайты и веб-приложения.
           </p>
-          <p className={styles.skills__description}>
-            Основные технологии, которые я использую в работе:
-          </p>
+          <Courses />
         </div>
 
-        <ul className={styles.skills__box}>
-          {technologys.map((technology) => (
-            <SkillItem technology={technology} icon={technology.icon} key={technology.uuid} />
-          ))}
-        </ul>
+        <div className={styles.skills__box}>
+          <h3 className={styles.skills__description}>
+            Основные технологии, которые я использую в работе:
+          </h3>
+          <ul className={styles.skills__list}>
+            {technologys.map((technology) => (
+              <SkillItem technology={technology} icon={technology.icon} key={technology.uuid} />
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

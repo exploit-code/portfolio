@@ -1,8 +1,8 @@
 import styles from "./experience.module.scss";
-import Link from "next/link";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { SectionTitle } from "../section-title/section-title";
 import { works } from "../../utils/works-data";
+import { Badge } from "../badge/badge";
 
 export const Experience = () => {
   return (
@@ -24,14 +24,7 @@ export const Experience = () => {
             <TabPanel className={styles.tabs__panel} key={index}>
               <div className={styles.tabs__panelTitle}>
                 <span>{item.position}</span>
-                <Link
-                  className={styles.tabs__panelTitle_link}
-                  href={item.link}
-                  target="_blank"
-                  tabIndex="0"
-                >
-                  @{item.company}
-                </Link>
+                <Badge text={item.company} link={item.link} />
               </div>
               <ul className={styles.tabs__panelList}>
                 {item.tasks.map((item, index) => (

@@ -1,0 +1,28 @@
+@use "../../styles/mixins";
+
+.courses {
+  display: grid;
+  gap: var(--value-16-px);
+
+  &__title {
+    @include mixins.font(16px, 400, 130%);
+    max-width: 568px;
+    color: var(--accents-2);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--value-8-px);
+  }
+
+  &__item {
+    @include mixins.flex(flex-start, center);
+    gap: var(--value-8-px);
+
+    &_name {
+      color: var(--accents-2);
+      @include mixins.font(16px, 400, 100%);
+    }
+  }
+}
