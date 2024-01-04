@@ -12,7 +12,7 @@ export const Courses = () => {
         </li>
         <li className={styles.courses__item}>
           <span className={styles.courses__item_name}>- React-разработчик</span>
-          <Badge text={"Яндекс.Практикум"} link={"https://practicum.yandex.ru/"} />
+          <Badge text={"Яндекс.Практикум"} link={"https://practicum.yandex.ru/react/"} />
         </li>
       </ul>
     </div>

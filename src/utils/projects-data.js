@@ -9,6 +9,17 @@ import ReduxIcon from "../../public/images/redux-icon.svg";
 
 export const projects = [
   {
+    link: "https://react-burger-exploit-code.vercel.app/",
+    title: "Stellar-Burgers",
+    technologies: [
+      <ReactIcon key="ReactIcon" />,
+      <ReduxIcon key="ReduxIcon" />,
+      <TSIcon key="TSIcon" />,
+      <SassIcon key="SassIcon" />,
+    ],
+    uuid: uuidv4(),
+  },
+  {
     link: "https://fake-shop-exploit-code.vercel.app/",
     title: "Fake-Shop",
     technologies: [
@@ -31,7 +42,7 @@ export const projects = [
   },
   {
     link: "https://drweb.africa/landing/partner_demo",
-    title: "Become a partner of the Doctor Web brand",
+    title: "Become a partner of the Doctor Web",
     technologies: [
       <HtmlIcon key="HtmlIcon" />,
       <SassIcon key="SassIcon" />,
