@@ -51,22 +51,32 @@ export const projects = [
     uuid: uuidv4(),
   },
   {
-    link: "https://www.drweb.cn/landing/promo_drweb",
-    title: "Dr.Web Security Space",
-    technologies: [
-      <HtmlIcon key="HtmlIcon" />,
-      <SassIcon key="SassIcon" />,
-      <JsIcon key="JsIcon" />,
-    ],
-    uuid: uuidv4(),
-  },
-  {
     link: "https://drweb.africa/landing/products_home",
     title: "Protect your world",
     technologies: [
       <HtmlIcon key="HtmlIcon" />,
       <SassIcon key="SassIcon" />,
       <AlpineIcon key="AlpineIcon" />,
+    ],
+    uuid: uuidv4(),
+  },
+  {
+    link: "https://www.drweb.ru/landing/cybertestkids",
+    title: "Cyber test kids",
+    technologies: [
+      <HtmlIcon key="HtmlIcon" />,
+      <SassIcon key="SassIcon" />,
+      <AlpineIcon key="AlpineIcon" />,
+    ],
+    uuid: uuidv4(),
+  },
+  {
+    link: "https://www.drweb.cn/landing/promo_drweb",
+    title: "Dr.Web Security Space",
+    technologies: [
+      <HtmlIcon key="HtmlIcon" />,
+      <SassIcon key="SassIcon" />,
+      <JsIcon key="JsIcon" />,
     ],
     uuid: uuidv4(),
   },
