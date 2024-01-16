@@ -7,6 +7,7 @@ import TSIcon from "../../public/images/ts-icon.svg";
 import ReduxIcon from "../../public/images/redux-icon.svg";
 import FigmaIcon from "../../public/images/figma-icon.svg";
 import NextJsIcon from "../../public/images/nextjs-icon.svg";
+import CypressIcon from "../../public/images/cypress-icon.svg";
 
 export const technologys = [
   { name: "Html", modifier: "html", uuid: "html", icon: <HtmlIcon key="HtmlIcon" /> },
@@ -23,4 +24,5 @@ export const technologys = [
     icon: <AlpineIcon key="AlpineIcon" />,
   },
   { name: "Figma", modifier: "figma", uuid: "figma", icon: <FigmaIcon key="FigmaIcon" /> },
+  { name: "Cypress", modifier: "cypress", uuid: "cypress", icon: <CypressIcon key="CypressIcon" /> },
 ];
