@@ -25,6 +25,7 @@ export const projects = [
     technologies: [
       <ReactIcon key="ReactIcon" />,
       <ReduxIcon key="ReduxIcon" />,
+      <TSIcon key="TSIcon" />,
       <SassIcon key="SassIcon" />,
     ],
     uuid: uuidv4(),
