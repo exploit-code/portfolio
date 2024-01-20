@@ -63,7 +63,7 @@ export const projects = [
   },
   {
     link: "https://www.drweb.ru/landing/cybertestkids",
-    title: "Cyber test kids",
+    title: "Cyber test for kids",
     technologies: [
       <HtmlIcon key="HtmlIcon" />,
       <SassIcon key="SassIcon" />,
