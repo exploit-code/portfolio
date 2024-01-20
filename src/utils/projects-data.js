@@ -98,21 +98,4 @@ export const projects = [
     ],
     uuid: uuidv4(),
   },
-  {
-    link: "https://www.freeantivirusdownloads.com",
-    title: "Free anti-virus Dr.Web",
-    technologies: [
-      <HtmlIcon key="HtmlIcon" />,
-      <SassIcon key="SassIcon" />,
-      <JsIcon key="JsIcon" />,
-      <AlpineIcon key="AlpineIcon" />,
-    ],
-    uuid: uuidv4(),
-  },
-  {
-    link: "https://estore.drweb.ru/promomobile",
-    title: "Dr.Web Security Space for Android",
-    technologies: [<HtmlIcon key="HtmlIcon" />, <SassIcon key="SassIcon" />],
-    uuid: uuidv4(),
-  },
 ];
