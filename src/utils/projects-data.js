@@ -9,7 +9,7 @@ import ReduxIcon from "../../public/images/redux-icon.svg";
 
 export const projects = [
   {
-    link: "https://react-burger-zeta-gilt.vercel.app/",
+    link: "https://react-burger-git-main-exploit-code.vercel.app/",
     title: "Stellar-Burgers",
     technologies: [
       <ReactIcon key="ReactIcon" />,
