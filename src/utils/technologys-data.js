@@ -8,6 +8,7 @@ import ReduxIcon from "../../public/images/redux-icon.svg";
 import FigmaIcon from "../../public/images/figma-icon.svg";
 import NextJsIcon from "../../public/images/nextjs-icon.svg";
 import CypressIcon from "../../public/images/cypress-icon.svg";
+import Tailwindcss from "../../public/images/tailwindcss-icon.svg";
 
 export const technologys = [
   { name: "Html", modifier: "html", uuid: "html", icon: <HtmlIcon key="HtmlIcon" /> },
@@ -25,4 +26,5 @@ export const technologys = [
   },
   { name: "Figma", modifier: "figma", uuid: "figma", icon: <FigmaIcon key="FigmaIcon" /> },
   { name: "Cypress", modifier: "cypress", uuid: "cypress", icon: <CypressIcon key="CypressIcon" /> },
+  { name: "Tailwindcss", modifier: "tailwindcss", uuid: "tailwindcss", icon: <Tailwindcss key="Tailwindcss" /> },
 ];
