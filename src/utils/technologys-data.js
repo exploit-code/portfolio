@@ -12,7 +12,7 @@ import Tailwindcss from "../../public/images/tailwindcss-icon.svg";
 
 export const technologys = [
   { name: "Html", modifier: "html", uuid: "html", icon: <HtmlIcon key="HtmlIcon" /> },
-  { name: "Scss", modifier: "scss", uuid: "scss", icon: <SassIcon key="SassIcon" /> },
+  { name: "SCSS", modifier: "scss", uuid: "scss", icon: <SassIcon key="SassIcon" /> },
   { name: "JavaScript", modifier: "js", uuid: "js", icon: <JsIcon key="JsIcon" /> },
   { name: "React", modifier: "react", uuid: "react", icon: <ReactIcon key="ReactIcon" /> },
   { name: "Redux", modifier: "redux", uuid: "redux", icon: <ReduxIcon key="ReduxIcon" /> },
@@ -26,5 +26,5 @@ export const technologys = [
   },
   { name: "Figma", modifier: "figma", uuid: "figma", icon: <FigmaIcon key="FigmaIcon" /> },
   { name: "Cypress", modifier: "cypress", uuid: "cypress", icon: <CypressIcon key="CypressIcon" /> },
-  { name: "Tailwindcss", modifier: "tailwindcss", uuid: "tailwindcss", icon: <Tailwindcss key="Tailwindcss" /> },
+  { name: "Tailwind CSS", modifier: "tailwindcss", uuid: "tailwindcss", icon: <Tailwindcss key="Tailwindcss" /> },
 ];
